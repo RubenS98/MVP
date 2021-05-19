@@ -33,10 +33,6 @@
                         @endfor
                     </div>
                     <div id="paletteHolder" class="col-4 border">
-                        <div class="row justify-content-center">
-                            <label class="btn btn-info" onclick="changeColor()">Refresh palette</label>
-                        </div>
-                        <br>
                         @for ($i = 0; $i < count($colors); $i++)
                             <div class="row justify-content-center" id="colored{{$i+1}}" name="colored{{$i+1}}" style="background-color: {{$colors[$i]}}">
                                 <br>
@@ -47,6 +43,7 @@
                     </div>
                     <div class="col-3">
                         <div class="row justify-content-center">
+                            <label class="btn btn-success" onclick="changeColor()">Refresh palette</label>
                             <label class="btn btn-primary" onclick="addColor()">Add color</label>
                             <label class="btn btn-danger" onclick="removeColor()">Remove color</label>
                         </div>
