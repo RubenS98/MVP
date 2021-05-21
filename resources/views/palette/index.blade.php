@@ -4,11 +4,9 @@
 
 <div class="text-center">
     <br>
-    <h1>Your palettes</h1>
+    <h1>My Palettes</h1>
     <br>
-    @auth
-        <a href="{{ route('palette.create') }}" class="btn btn-outline-info">Create a palette</a>
-    @endauth
+    <a href="{{ route('palette.create') }}" class="btn btn-outline-info">Create a Palette</a>
     <br>
 </div>
 
@@ -28,12 +26,12 @@
                 <tr>
                     <td>{{ $item->name }}</td>
                     <td><a href="{{ route('palette.show', ['palette' => $item]) }}" class="btn btn-outline-secondary">See Palette</a></td>
-                    <td><a href="{{ route('palette.edit', ['palette' => $item]) }}" class="btn btn-outline-primary">Edit</a></td>
+                    <td><a href="{{ route('palette.edit', ['palette' => $item]) }}" class="btn btn-outline-primary">Edit Palette</a></td>
                     <td>
                         <form action="{{ route('palette.delete', ['palette' => $item]) }}" method="post">
                             @csrf
                             @method('DELETE')
-                            <input type="submit" value="Delete" class="btn btn-outline-danger">
+                            <input type="submit" value="Delete Palette" class="btn btn-outline-danger">
                         </form>
                     </td>
                 </tr>

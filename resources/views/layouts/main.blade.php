@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('palette.index') }}">See your palettes</a>
+                    <a class="nav-link" href="{{ route('palette.index') }}">Go to Home Page</a>
                 </li>
             </ul>
         </div>

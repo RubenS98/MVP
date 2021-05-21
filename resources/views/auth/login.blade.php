@@ -35,12 +35,12 @@
 		</div>
 
 		<div class="container" style="width: 35%;">
-			<div class="card">
+			<div class="">
 				<div class="card-body">
 					<div class="text-center">
 						<form action="{{ route('auth.register') }}">
                             @csrf
-							<h5 class="card-title">Don't have an account? Register.</h5>
+							<h5 class="card-title">Or</h5>
 							<input type="submit" value="Register" class="btn btn-outline-info">
 						</form>
 					</div>
